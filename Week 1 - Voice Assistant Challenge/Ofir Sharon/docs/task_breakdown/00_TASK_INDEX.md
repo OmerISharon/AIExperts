@@ -3,7 +3,7 @@
 ## Project Overview
 A speech-to-speech conversational AI assistant (web widget) for EZpresence. Features a 2D illustrated avatar ("Maya") with emotion-driven expressions, real-time voice conversation via LiveKit, GPT-4 conversational engine, TTS voice output, live transcript, and a feedback system.
 
-**Tech Stack:** React (TypeScript), Vite, Tailwind CSS, LiveKit SDK, OpenAI API (Whisper + GPT-4 + TTS), ElevenLabs TTS (optional upgrade), Next.js API routes, PostgreSQL/Supabase, Vercel deployment.
+**Tech Stack:** React (TypeScript), Vite, styled-components, LiveKit SDK, OpenAI API (Whisper + GPT-4 + TTS), ElevenLabs TTS (optional upgrade), Next.js API routes, PostgreSQL/Supabase, Vercel deployment.
 
 ---
 
@@ -44,7 +44,7 @@ PHASE 6 — Assembly & Ship
 
 | # | Task | Est. Time | Dependencies | Key Output |
 |---|------|-----------|-------------|------------|
-| 01 | Project Scaffolding & Configuration | 30 min | None | Working Vite+React+TS+Tailwind project |
+| 01 | Project Scaffolding & Configuration | 30 min | None | Working Vite+React+TS+styled-components project |
 | 02 | Avatar SVG Assets Creation | 45 min | None | 6 SVG files in `public/avatars/` |
 | 03 | Avatar React Component | 30 min | 02 | `<Avatar>` component with emotion transitions |
 | 04 | Main UI Layout & Widget Shell | 45 min | 01 | Full widget layout with call controls |
@@ -107,7 +107,6 @@ maya-ezpresence/
 │   ├── App.tsx
 │   └── main.tsx
 ├── .env.example
-├── tailwind.config.ts
 ├── tsconfig.json
 ├── vite.config.ts
 ├── package.json

@@ -60,7 +60,7 @@ Maya specializes in these 3 core features initially:
 ### Frontend Stack
 - **React** (TypeScript optional but recommended)
 - **LiveKit SDK** (for real-time voice/transcription)
-- **Tailwind CSS** (styling)
+- **styled-components** (styling)
 - **TypeScript** (for type safety)
 
 ### Backend Requirements (Minimal)
@@ -217,7 +217,7 @@ End-of-Conversation Survey: "Was this helpful?"
 ### Hour 1.5-2: Setup & Infrastructure
 - [ ] Create React project (create-react-app or Vite)
 - [ ] Install LiveKit SDK + dependencies
-- [ ] Set up Tailwind CSS
+- [ ] Set up styled-components
 - [ ] Create basic project structure
 - [ ] Set up environment variables (.env)
 - [ ] Create Avatar component with expression switching

@@ -74,7 +74,7 @@ She's an expert in:
 ### Frontend
 - **React** (TypeScript recommended)
 - **LiveKit SDK** (real-time voice transport)
-- **Tailwind CSS** (styling)
+- **styled-components** (styling)
 - **OpenAI API** (Whisper for transcription)
 
 ### Backend  

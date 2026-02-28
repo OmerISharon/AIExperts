@@ -101,9 +101,9 @@ interface AvatarProps {
 }
 
 const SIZE_MAP = {
-  sm: "w-20 h-20",
-  md: "w-32 h-32",
-  lg: "w-[200px] h-[200px]",
+  sm: "80px",
+  md: "128px",
+  lg: "200px",
 };
 
 export const Avatar: React.FC<AvatarProps> = ({
@@ -141,15 +141,11 @@ export const Avatar: React.FC<AvatarProps> = ({
 
 ### CSS Classes / Animation
 
-Use Tailwind + inline transition styles:
+Use `styled-components` to style the Avatar and spinner. Create styled components `AvatarContainer`, `AvatarImage`, `LoadingSpinner` inside `Avatar.tsx` mapped to the logic described above.
 
-```
-Container: relative, flex items-center justify-center
-Image: object-contain, transition-opacity duration-300 ease-in-out
-  - When isTransitioning: opacity-0
-  - When NOT isTransitioning: opacity-100
-Loading spinner: absolute overlay, animate-spin, border-4 border-brand-purple border-t-transparent, rounded-full
-```
+- `AvatarContainer`: relative positioning, flex center.
+- `AvatarImage`: object-fit contain, transitions opacity and scale.
+- `LoadingSpinner`: absolute overlay, spin animation, brand purple border.
 
 Also consider adding a subtle scale animation on transition:
 - Fade out: opacity 1→0, scale 1→0.95

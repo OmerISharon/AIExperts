@@ -11,7 +11,7 @@ You are building **Maya the EZpresence Hostess** — a speech-to-speech conversa
 **Tech choices:**
 - **Vite** (fast dev server, better than CRA)
 - **React 18+** with TypeScript
-- **Tailwind CSS v3** for styling
+- **styled-components** for styling
 - **pnpm** or **npm** as package manager
 
 ---
@@ -32,7 +32,8 @@ Install everything the project will need across all tasks:
 
 ```bash
 # Core UI
-npm install tailwindcss @tailwindcss/forms postcss autoprefixer
+npm install styled-components
+npm install -D @types/styled-components
 
 # LiveKit (real-time voice)
 npm install @livekit/components-react @livekit/components-styles livekit-client
@@ -48,73 +49,18 @@ npm install -D @types/uuid
 npm install elevenlabs
 ```
 
-### 3. Configure Tailwind CSS
-
-Initialize Tailwind:
-```bash
-npx tailwindcss init -p
-```
-
-Update `tailwind.config.ts`:
-```typescript
-import type { Config } from 'tailwindcss'
-
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        brand: {
-          purple: '#7C3AED',
-          'purple-light': '#A78BFA',
-          'purple-dark': '#5B21B6',
-          teal: '#14B8A6',
-          'teal-light': '#5EEAD4',
-          'teal-dark': '#0D9488',
-        }
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-      },
-      borderRadius: {
-        'widget': '12px',
-      },
-      animation: {
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'fade-in': 'fadeIn 0.3s ease-in-out',
-        'fade-out': 'fadeOut 0.3s ease-in-out',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        fadeOut: {
-          '0%': { opacity: '1' },
-          '100%': { opacity: '0' },
-        },
-      },
-    },
-  },
-  plugins: [],
-} satisfies Config
-```
+### 3. Configure styled-components
 
 Update `src/styles/globals.css`:
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  background-color: #f8fafc;
 }
 ```
 
@@ -296,7 +242,7 @@ npm run dev
 
 Confirm:
 - Dev server starts without errors
-- Tailwind classes render (check the styled heading)
+- Global CSS applies successfully
 - TypeScript compiles cleanly
 - No missing dependency warnings
 
@@ -305,7 +251,7 @@ Confirm:
 ## Acceptance Criteria
 
 - [ ] `npm run dev` starts cleanly with no errors
-- [ ] Tailwind utility classes apply correctly (brand colors, font, etc.)
+- [ ] styled-components can be imported and compile without errors
 - [ ] All directories exist: `components/`, `hooks/`, `services/`, `api/`, `types/`, `config/`, `styles/`, `public/avatars/`
 - [ ] `src/types/index.ts` exports all shared types
 - [ ] `src/config/constants.ts` exports brand config and avatar paths
@@ -317,7 +263,6 @@ Confirm:
 
 ## Output Files
 - `package.json` (with all deps)
-- `tailwind.config.ts`
 - `src/styles/globals.css`
 - `src/types/index.ts`
 - `src/config/constants.ts`

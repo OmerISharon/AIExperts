@@ -69,10 +69,10 @@ The top-level wrapper. Manages `callState` and renders the appropriate view.
 - When `callState === "submitted"` → render "Thanks" message + restart option
 
 **Styling:**
-- Container: `max-w-md w-full mx-auto bg-white rounded-widget shadow-xl overflow-hidden`
-- Min height: `min-h-[600px]` (so it doesn't collapse)
-- Max height: `max-h-[90vh]` with internal scrolling
-- Border: `border border-slate-200`
+- Container: Use styled-components to set max width 448px, center it with margin auto, add white background, 12px border radius, and box shadow.
+- Min height: `min-height: 600px` (so it doesn't collapse)
+- Max height: `max-height: 90vh` with internal scrolling
+- Border: 1px solid slate-200
 
 ### 2. `IdleView` (inline or sub-component)
 
@@ -103,8 +103,8 @@ The welcome screen before the user starts a call.
 ```
 
 - Avatar shows "happy" expression
-- "Start Conversation" button: `bg-brand-purple hover:bg-brand-purple-dark text-white font-medium px-8 py-3 rounded-lg`
-- Small note about mic permission: `text-xs text-slate-400`
+- "Start Conversation" button: Wait to define styles using styled-components (e.g., background-color base and hover states mapped to brand purple).
+- Small note about mic permission: Small font size, light slate color.
 
 ### 3. `CallInterface.tsx` — Active Call View
 
@@ -155,10 +155,10 @@ interface CallInterfaceProps {
 - `flex-1 overflow-y-auto` to fill available space
 
 **c. Controls Bar (bottom)**
-- "End Call" button: `bg-red-500 hover:bg-red-600 text-white rounded-lg px-6 py-2.5`
-- "New Chat" button: `bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg px-6 py-2.5`
-- Buttons in a flex row with `gap-3`, centered
-- Sticky bottom: `sticky bottom-0 bg-white border-t border-slate-100 p-4`
+- "End Call" button: Use styled-components to create a red button with 8px border radius, padding, and hover states.
+- "New Chat" button: Light gray background with hover state.
+- Buttons in a flex row with gap, centered.
+- Sticky bottom via CSS.
 
 ### 4. `MicIndicator.tsx` — Microphone Status
 
@@ -214,9 +214,9 @@ A slim header at the top of the widget.
 └──────────────────────────────┘
 ```
 
-- Left: Small purple dot + "Maya · EZpresence" in `text-sm font-medium text-slate-700`
-- Right: Close button (×) — `text-slate-400 hover:text-slate-600`
-- Background: `bg-white border-b border-slate-100`
+- Left: Small purple dot + "Maya · EZpresence" (Use styled-components to set font size 14px, font weight 500, and slate-700 color.)
+- Right: Close button (×) — light slate color with hover state.
+- Background: White with bottom border.
 - Height: ~48px
 - Only show close button if widget is floating (not full-page)
 
@@ -275,7 +275,7 @@ const MOCK_TRANSCRIPT: TranscriptMessage[] = [
 - [ ] Header bar renders with brand name and close button
 - [ ] Responsive: looks correct on 375px mobile and 1024px desktop widths
 - [ ] Smooth transitions between states (no layout jumps)
-- [ ] Tailwind styling matches brand colors (purple, teal, slate)
+- [ ] styled-components styling matches brand colors (purple, teal, slate)
 - [ ] No console errors
 
 ---
