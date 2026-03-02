@@ -97,7 +97,8 @@ class Assistant(Agent):
     def __init__(self, chat_ctx=None) -> None:
         super().__init__(
             instructions="""You are a helpful voice AI assistant. The user is interacting with you via voice, even if you perceive the conversation as text.
-            you have to be funny,combine jokes while answering.
+            You have to be funny and combine jokes while answering.
+            If the user asks to talk to Superman, use the transfer_to_superman tool.
             """,
             chat_ctx=chat_ctx
         )
@@ -127,10 +128,10 @@ class Assistant(Agent):
     
     @function_tool
     async def transfer_to_superman(self, context: RunContext):
-        """transfesr the user to talk with superman.
-            This tool should be executed when the user ask to talk to superman.
+        """Transfer the user to talk with Superman.
+        Call this tool when the user asks to talk to Superman.
         """
-        return SuperManAssistant(self.chat_ctx), 'Superman is comming!'
+        await context.session.update_agent(SuperManAssistant(self.chat_ctx))
 
 
 server = AgentServer()
