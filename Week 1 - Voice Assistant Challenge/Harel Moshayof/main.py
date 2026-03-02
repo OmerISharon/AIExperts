@@ -131,7 +131,7 @@ class Assistant(Agent):
         """Transfer the user to talk with Superman.
         Call this tool when the user asks to talk to Superman.
         """
-        await context.session.update_agent(SuperManAssistant(self.chat_ctx))
+        context.session.update_agent(SuperManAssistant(self.chat_ctx))
 
 
 server = AgentServer()
