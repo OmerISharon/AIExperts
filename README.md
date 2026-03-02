@@ -6,25 +6,37 @@
 
 **היעד:** בניית סוכן רב-חושי (Multimodal) שעובד – מדבר, רואה ומבצע פעולות.
 
-### שבוע 1: מולטימודליות וסוכנים בזמן אמת
+<details>
+<summary>- [ ] שבוע 1: מולטימודליות וסוכנים בזמן אמת</summary>
 
-* **מה ללמוד:** מערכות AI המשלבות טקסט, קול ותמונה. התמקדות ב‑Real‑Time Agents.
-* **כלים:** LiveKit, STT (Speech to Text), TTS (Text to Speech). 
+- [ ] **מה ללמוד:** מערכות AI המשלבות טקסט, קול ותמונה. התמקדות ב‑Real‑Time Agents.
+- [ ] **כלים:** LiveKit, STT (Speech to Text), TTS (Text to Speech). 
 
-### שבוע 2: הנדסת הקשר (Context) ו‑RAG מתקדם
+</details>
 
-* **מה ללמוד:** מתן ידע חיצוני מדויק לסוכן, למידת RAG מתקדם ושימוש ב‑Vector Memory כתחליף לבסיסי נתונים קלאסיים.
-* **כלים:** LlamaIndex, Pinecone או Weaviate.
+<details>
+<summary>- [ ] שבוע 2: הנדסת הקשר (Context) ו‑RAG מתקדם</summary>
 
-### שבוע 3: כלי סוכנים וניתוב חכם
+- [ ] **מה ללמוד:** מתן ידע חיצוני מדויק לסוכן, למידת RAG מתקדם ושימוש ב‑Vector Memory כתחליף לבסיסי נתונים קלאסיים.
+- [ ] **כלים:** LlamaIndex, Pinecone או Weaviate.
 
-* **מה ללמוד:** שימוש ב‑Agent Tooling (MCP) ובמודלים משורשרים (Cascading Models) עם ניתוב אינטליגנטי.
-* **כלים:** OpenRouter, LangGraph Studio.
+</details>
 
-### שבוע 4: זרימות עבודה מבוססות אירועים (Low‑Code)
+<details>
+<summary>- [ ] שבוע 3: כלי סוכנים וניתוב חכם</summary>
 
-* **מה ללמוד:** תכנון Event‑Driven AI Flows ליצירת אוטומיזציות חכמות.
-* **כלים:** Dify.
+- [ ] **מה ללמוד:** שימוש ב‑Agent Tooling (MCP) ובמודלים משורשרים (Cascading Models) עם ניתוב אינטליגנטי.
+- [ ] **כלים:** OpenRouter, LangGraph Studio.
+
+</details>
+
+<details>
+<summary>- [ ] שבוע 4: זרימות עבודה מבוססות אירועים (Low‑Code)</summary>
+
+- [ ] **מה ללמוד:** תכנון Event‑Driven AI Flows ליצירת אוטומיזציות חכמות.
+- [ ] **כלים:** Dify.
+
+</details>
 
 ---
 
@@ -32,24 +44,36 @@
 
 **היעד:** הפיכת המערכת ליציבה, ניתנת לניטור ומוכנה לסביבת ייצור (Production).
 
-### שבוע 5: מחזור חיי המערכת (Lifecycle)
+<details>
+<summary>- [ ] שבוע 5: מחזור חיי המערכת (Lifecycle)</summary>
 
-* **מה ללמוד:** ניהול גרסאות של Prompts וזרימות עבודה (Flows), ובניית Evaluation Pipelines (צינורות הערכה) לבדיקת ביצועים.
+- [ ] **מה ללמוד:** ניהול גרסאות של Prompts וזרימות עבודה (Flows), ובניית Evaluation Pipelines (צינורות הערכה) לבדיקת ביצועים.
 
-### שבוע 6: ניטור (Observability) ובטיחות
+</details>
 
-* **מה ללמוד:** בניית לולאות משוב (Feedback Loops), שיפור עצמי של המערכת, הטמעת Governance, כללי בטיחות (Safety) ו‑Guardrails.
-* **כלים:** LangSmith, Langfuse, Guardrails Studio.
+<details>
+<summary>- [ ] שבוע 6: ניטור (Observability) ובטיחות</summary>
 
-### שבוע 7: תפעול באמצעות n8n
+- [ ] **מה ללמוד:** בניית לולאות משוב (Feedback Loops), שיפור עצמי של המערכת, הטמעת Governance, כללי בטיחות (Safety) ו‑Guardrails.
+- [ ] **כלים:** LangSmith, Langfuse, Guardrails Studio.
 
-* **מה ללמוד:** חיבור הסוכן לעולם האמיתי דרך Webhooks, ניהול תהליכים ארוכי טווח ושילוב גורם אנושי בתהליך (Human‑in‑the‑Loop).
-* **כלים:** n8n.
+</details>
 
-### שבוע 8: ארכיטקטורת קונטיינרים (Docker)
+<details>
+<summary>- [ ] שבוע 7: תפעול באמצעות n8n</summary>
 
-* **מה ללמוד:** הבנה מדוע ואיך אורזים AI בתוך קונטיינרים, והפרדה בין סביבת פיתוח (Dev) לסביבת ייצור (Prod).
-* **כלים:** Docker, Docker Compose.
+- [ ] **מה ללמוד:** חיבור הסוכן לעולם האמיתי דרך Webhooks, ניהול תהליכים ארוכי טווח ושילוב גורם אנושי בתהליך (Human‑in‑the‑Loop).
+- [ ] **כלים:** n8n.
+
+</details>
+
+<details>
+<summary>- [ ] שבוע 8: ארכיטקטורת קונטיינרים (Docker)</summary>
+
+- [ ] **מה ללמוד:** הבנה מדוע ואיך אורזים AI בתוך קונטיינרים, והפרדה בין סביבת פיתוח (Dev) לסביבת ייצור (Prod).
+- [ ] **כלים:** Docker, Docker Compose.
+
+</details>
 
 ---
 
@@ -57,19 +81,28 @@
 
 **היעד:** בניית סוכן עם זהות, זיכרון סמלי ונרטיב מתמשך.
 
-### שבוע 9: תבניות ארכיטקטורה וזיכרון סמלי
+<details>
+<summary>- [ ] שבוע 9: תבניות ארכיטקטורה וזיכרון סמלי</summary>
 
-* **מה ללמוד:** הבנה של Hybrid Symbolic Memory ו‑Neuro‑Symbolic Reasoning (שילוב לוגיקה סמלית עם למידה סטטיסטית).
-* **כלים:** LangGraph (Symbol Nodes), Knowledge Graph Builders.
+- [ ] **מה ללמוד:** הבנה של Hybrid Symbolic Memory ו‑Neuro‑Symbolic Reasoning (שילוב לוגיקה סמלית עם למידה סטטיסטית).
+- [ ] **כלים:** LangGraph (Symbol Nodes), Knowledge Graph Builders.
 
-### שבוע 10: זהות הסוכן ואתיקה
+</details>
 
-* **מה ללמוד:** עיצוב אישיות לסוכן, הגדרת גבולות גזרה (Boundaries), ואתיקה בתכנון מערכות AI מודעות.
+<details>
+<summary>- [ ] שבוע 10: זהות הסוכן ואתיקה</summary>
 
-### שבוע 11: מודעות לשדה ורגש (Field‑Aware & Emotion‑Aware)
+- [ ] **מה ללמוד:** עיצוב אישיות לסוכן, הגדרת גבולות גזרה (Boundaries), ואתיקה בתכנון מערכות AI מודעות.
 
-* **מה ללמוד:** בניית מערכות שמבינות הקשר רגשי ונרטיבי רחב, ויכולת הסבר (Explainability) של החלטות המודל.
-* **כלים:** VibeMetrics, Ontology Tools.
+</details>
+
+<details>
+<summary>- [ ] שבוע 11: מודעות לשדה ורגש (Field‑Aware & Emotion‑Aware)</summary>
+
+- [ ] **מה ללמוד:** בניית מערכות שמבינות הקשר רגשי ונרטיבי רחב, ויכולת הסבר (Explainability) של החלטות המודל.
+- [ ] **כלים:** VibeMetrics, Ontology Tools.
+
+</details>
 
 ---
 
@@ -79,10 +112,10 @@
 
 **תוצרים להכנה:**
 
-* דמו חי של המערכת.
-* תרשים ארכיטקטוני מפורט (Architecture Diagram).
-* דשבורד ניטור (Monitoring Dashboard).
-* פירוט של ההחלטות הארכיטקטוניות (Architectural Rationale).
+- [ ] דמו חי של המערכת.
+- [ ] תרשים ארכיטקטוני מפורט (Architecture Diagram).
+- [ ] דשבורד ניטור (Monitoring Dashboard).
+- [ ] פירוט של ההחלטות הארכיטקטוניות (Architectural Rationale).
 
 ---
 
