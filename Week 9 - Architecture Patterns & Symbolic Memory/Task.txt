@@ -1,0 +1,10 @@
+המשימה: תבניות ארכיטקטורה וזיכרון סמלי
+
+המטרה: הבנה של Hybrid Symbolic Memory ו‑Neuro‑Symbolic Reasoning (שילוב לוגיקה סמלית עם למידה סטטיסטית) לבניית סוכן עם זיכרון ונרטיב מתמשך.
+
+מה ללמוד:
+- Hybrid Symbolic Memory – זיכרון סמלי היברידי
+- Neuro‑Symbolic Reasoning – שילוב לוגיקה סמלית עם למידה סטטיסטית
+- תבניות ארכיטקטורה מתקדמות לסוכנים
+
+כלים: LangGraph (Symbol Nodes), Knowledge Graph Builders.

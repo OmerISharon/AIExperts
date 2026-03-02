@@ -1,0 +1,10 @@
+המשימה: כלי סוכנים וניתוב חכם
+
+המטרה: שימוש ב‑Agent Tooling (MCP) ובמודלים משורשרים (Cascading Models) עם ניתוב אינטליגנטי לבניית סוכנים חכמים ויעילים יותר.
+
+מה ללמוד:
+- שימוש ב‑Agent Tooling (MCP)
+- מודלים משורשרים (Cascading Models)
+- ניתוב אינטליגנטי (Intelligent Routing)
+
+כלים: OpenRouter, LangGraph Studio.

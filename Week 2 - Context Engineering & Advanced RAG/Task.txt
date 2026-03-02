@@ -1,0 +1,10 @@
+המשימה: הנדסת הקשר (Context) ו‑RAG מתקדם
+
+המטרה: מתן ידע חיצוני מדויק לסוכן AI באמצעות RAG מתקדם ושימוש ב‑Vector Memory כתחליף לבסיסי נתונים קלאסיים.
+
+מה ללמוד:
+- מתן ידע חיצוני מדויק לסוכן
+- למידת RAG מתקדם (Retrieval-Augmented Generation)
+- שימוש ב‑Vector Memory כתחליף לבסיסי נתונים קלאסיים
+
+כלים: LlamaIndex, Pinecone או Weaviate.

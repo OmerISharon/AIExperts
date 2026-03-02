@@ -1,0 +1,11 @@
+המשימה: ניטור (Observability) ובטיחות
+
+המטרה: בניית לולאות משוב (Feedback Loops), שיפור עצמי של המערכת, הטמעת Governance, כללי בטיחות (Safety) ו‑Guardrails.
+
+מה ללמוד:
+- בניית לולאות משוב (Feedback Loops)
+- שיפור עצמי של המערכת
+- הטמעת Governance וכללי בטיחות (Safety)
+- הגדרת Guardrails למניעת תוצאות לא רצויות
+
+כלים: LangSmith, Langfuse, Guardrails Studio.
